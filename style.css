@@ -1,0 +1,429 @@
+/* ==================== VARIABLES COULEURS ==================== */
+:root {
+  --green-600: #2e7d32;
+  --green-500: #43a047;
+  --green-400: #4caf50;
+  --green-300: #81c784;
+  --green-50: #e8f5e9;
+  --honey-400: #f4de8c;
+  --honey-300: #f7e7ab;
+  --ink-900: #133019;
+  --ink-800: #18411f;
+  --white: #ffffff;
+  --bg: #fff3e0;
+  --text: #133019;
+  --muted: #306c37;
+  --card: #ffffffcc;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --radius: 16px;
+}
+
+/* ==================== RESET & BASE ==================== */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Fond crème chaleureux */
+html {
+  background: linear-gradient(180deg, #fff7ea 0%, #fff3e0 60%, #fff0db 100%);
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: transparent !important;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==================== HEADER FIXE ==================== */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, var(--green-500), var(--green-600));
+  color: var(--white);
+  padding: 14px 24px;
+  z-index: 1000;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+}
+
+.fixed-header .inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+/* ==================== LOGO ==================== */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+  border-radius: 6px;
+  background: transparent;
+}
+
+.name {
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  font-size: 20px;
+}
+
+/* ==================== NAVIGATION ==================== */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#menu-toggle {
+  display: none;
+  background: transparent;
+  border: 2px solid #ffffff55;
+  color: var(--white);
+  font-size: 22px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#menu {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+#menu a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+#menu a:hover,
+#menu a.active {
+  background: var(--honey-400);
+  color: var(--ink-900);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+/* ==================== BOUTONS ==================== */
+.cta-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.btn-primary {
+  background: var(--honey-400);
+  color: var(--ink-900);
+}
+
+.btn-primary:hover {
+  background: var(--honey-300);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid #ffffff55;
+}
+
+.btn-ghost:hover {
+  border-color: #ffffffaa;
+}
+
+/* ==================== CONTENU PRINCIPAL ==================== */
+main {
+  flex: 1;
+  max-width: 1120px;
+  width: 92%;
+  margin: 110px auto 40px;
+  position: relative;
+}
+
+/* ==================== SECTIONS ET CARTES ==================== */
+.section {
+  background: var(--card);
+  border-left: 10px solid var(--green-400);
+  border-radius: var(--radius);
+  padding: 28px 28px;
+  box-shadow: var(--shadow);
+  margin-bottom: 22px;
+  backdrop-filter: saturate(120%) blur(4px);
+}
+
+.section h2 {
+  margin: 0 0 12px;
+  font-weight: 900;
+  color: var(--ink-900);
+  border-bottom: 3px solid var(--green-300);
+  padding-bottom: 8px;
+}
+
+.section h3 {
+  margin: 8px 0 10px;
+  color: var(--ink-800);
+}
+
+/* ==================== GRILLES ==================== */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* ==================== CARTES DES PÔLES ==================== */
+.pole-card {
+  background: linear-gradient(180deg, #ffffffea, #ffffffc5);
+  border: 1px solid #00000010;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.pole-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(180deg, #ffffff, #ffffffd8);
+}
+
+.pole-card .icon {
+  font-size: 26px;
+}
+
+/* ==================== TÉMOIGNAGES ==================== */
+.testimonial {
+  background: #fff;
+  border: 1px solid #00000010;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.testimonial .who {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* ==================== STATISTIQUES ==================== */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.stat {
+  background: linear-gradient(180deg, var(--green-50), #ffffff);
+  border: 1px solid #00000010;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+}
+
+.stat .n {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--green-600);
+}
+
+.stat .l {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* ==================== FOOTER ==================== */
+.fixed-footer {
+  background: linear-gradient(180deg, var(--green-600), var(--green-500));
+  color: var(--white);
+  padding: 16px 24px;
+  text-align: center;
+}
+
+/* ==================== ANIMATION REVEAL ==================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==================== FORMULAIRES ==================== */
+.form {
+  display: grid;
+  gap: 12px;
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1.5px solid #00000022;
+  background: #fff;
+  font: inherit;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--green-400);
+  box-shadow: 0 0 0 3px #4caf5030;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  #menu {
+    position: fixed;
+    top: 64px;
+    right: 12px;
+    left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: linear-gradient(180deg, var(--green-500), var(--green-600));
+    padding: 12px;
+    border-radius: 14px;
+    transform: translateX(120%);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  #menu.open {
+    transform: translateX(0);
+  }
+  #menu-toggle {
+    display: inline-block;
+  }
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==================== ACCESSIBILITÉ ==================== */
+:focus-visible {
+  outline: 3px solid var(--honey-400);
+  outline-offset: 2px;
+}
+
+/* ==================== LIENS ==================== */
+a {
+  color: var(--green-600);
+}
+
+a:hover {
+  color: var(--honey-400);
+}
+
+/* ==================== UTILITAIRES ==================== */
+.m-0 {
+  margin: 0;
+}
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.mt-24 {
+  margin-top: 24px;
+}
+.center {
+  text-align: center;
+}
+
+/* ==================== PHOTOS ==================== */
+.photo {
+  display: block;
+}
+
+.photo img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+.photo figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .photo img {
+    height: 200px;
+  }
+}

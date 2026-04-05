@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oxyjeunes - Accueil</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="menu.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="fixed-header">
+    <div class="inner">
+      <a class="brand" href="index.html" aria-label="Oxyjeunes">
+        <img class="logo-img" src="images/logo-oxyjeunes.jpg" alt="Logo Oxyjeunes">
+        <span class="name">Oxyjeunes</span>
+      </a>
+      <nav aria-label="Navigation principale">
+        <ul id="menu">
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="oxyjeunes.html">Oxyjeunes</a></li>
+          <li><a href="equipe.html">L'Équipe</a></li>
+          <li><a href="solidaire.html">Pôle Solidaire</a></li>
+          <li><a href="jeunesse.html">Pôle Jeunesse</a></li>
+          <li><a href="quartier.html">Pôle Quartier</a></li>
+          <li><a href="instagram.html">Instagram</a></li>
+        </ul>
+        <div class="cta-header">
+          <a class="btn btn-primary" href="dons.html">Faire un don</a>
+          <button id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section reveal">
+      <div class="grid-2">
+        <div>
+          <h2 class="m-0">Jeunes et ambitieux, pour nous & par nous</h2>
+          <p class="mt-16">
+            Association du quartier de l’Amiral Roussin, Oxyjeunes accompagne la jeunesse avec des actions solidaires, éducatives et citoyennes, portées par et pour les habitants.
+          </p>
+          <div class="actions mt-16">
+            <a class="btn btn-primary" href="oxyjeunes.html">Découvrir l’association</a>
+            <a class="btn" style="background:var(--green-400); color:white" href="instagram.html">Agir maintenant</a>
+          </div>
+        </div>
+        <div class="pole-card center" aria-hidden="true">
+          <div style="font-size:90px">💚</div>
+          <div class="mt-8" style="color:var(--muted); font-weight:800">Famille • Quartier • Entraide</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PÔLES D'ACTION -->
+    <section class="section reveal">
+      <h2>Nos pôles d’action</h2>
+      <div class="grid-3">
+        <a class="pole-card" href="solidaire.html">
+          <div class="icon">🤝</div>
+          <h3 class="m-0">Pôle Solidaire</h3>
+          <p class="mt-8">Maraudes, collectes et opérations d’entraide ici et ailleurs.</p>
+          <div class="actions mt-8"><span class="btn" style="background:var(--green-400); color:white">Découvrir</span></div>
+        </a>
+        <a class="pole-card" href="jeunesse.html">
+          <div class="icon">🔥</div>
+          <h3 class="m-0">Pôle Jeunesse</h3>
+          <p class="mt-8">Sorties, sport, orientation et rencontres inspirantes.</p>
+          <div class="actions mt-8"><span class="btn" style="background:var(--green-400); color:white">Découvrir</span></div>
+        </a>
+        <a class="pole-card" href="quartier.html">
+          <div class="icon">🏢</div>
+          <h3 class="m-0">Pôle Quartier</h3>
+          <p class="mt-8">Événements locaux et lien intergénérationnel.</p>
+          <div class="actions mt-8"><span class="btn" style="background:var(--green-400); color:white">Découvrir</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CHIFFRES CLÉS -->
+    <section class="section reveal">
+      <h2>Notre impact</h2>
+      <div class="stats">
+        <div class="stat"><div class="n">20+</div><div class="l">maraudes</div></div>
+        <div class="stat"><div class="n">10+</div><div class="l">sorties jeunes</div></div>
+        <div class="stat"><div class="n">3</div><div class="l">Rencontres Pro</div></div>
+        <div class="stat"><div class="n">1</div><div class="l">projet international</div></div>
+      </div>
+    </section>
+
+    <!-- TÉMOIGNAGES -->
+    <section class="section reveal">
+      <h2>Témoignages</h2>
+      <div class="grid-3">
+        <div class="testimonial">
+          <p>Grâce aux sorties et au soutien, mon fils a repris confiance et de nouvelles habitudes positives.</p>
+          <div class="who">— Aïcha, maman du quartier</div>
+        </div>
+        <div class="testimonial">
+          <p>Participer aux maraudes m’a montré la force du collectif. On peut tous faire une différence.</p>
+          <div class="who">— Ilies, bénévole</div>
+        </div>
+        <div class="testimonial">
+          <p>Les rencontres métiers m’ont donné des idées concrètes pour mon orientation.</p>
+          <div class="who">— Alpha, lycéen</div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- PHOTOS -->
+    <section class="section reveal">
+      <h2>En images</h2>
+      <div class="grid-2">
+        <figure class="photo">
+          <img src="images/i3.jpg" alt="Grand groupe d’enfants et d’adultes souriants dans un parc, journée ensoleillée" loading="lazy">
+          <figcaption>Sortie parc - Oxyjeunes</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="images/i12.jpg" alt="Groupe de jeunes autour de deux grandes pizzas, ambiance conviviale" loading="lazy">
+          <figcaption>Moments conviviaux</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="fixed-footer">
+    <p>&copy; 2025 Oxyjeunes — Tous droits réservés • Contact: oxyjeunes@example.fr</p>
+  </footer>
+
+</body>
+</html>

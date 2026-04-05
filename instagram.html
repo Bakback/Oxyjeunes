@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oxyjeunes - Instagram</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="menu.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="fixed-header">
+    <div class="inner">
+      <a class="brand" href="index.html" aria-label="Oxyjeunes">
+        <img class="logo-img" src="images/logo-oxyjeunes.jpg" alt="Logo Oxyjeunes">
+        <span class="name">Oxyjeunes</span>
+      </a>
+      <nav aria-label="Navigation principale">
+        <ul id="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="oxyjeunes.html">Oxyjeunes</a></li>
+          <li><a href="equipe.html">L'Équipe</a></li>
+          <li><a href="solidaire.html">Pôle Solidaire</a></li>
+          <li><a href="jeunesse.html">Pôle Jeunesse</a></li>
+          <li><a href="quartier.html">Pôle Quartier</a></li>
+          <li><a href="instagram.html" class="active">Instagram</a></li>
+        </ul>
+        <div class="cta-header">
+          <a class="btn btn-primary" href="dons.html">Faire un don</a>
+          <button id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section reveal center">
+      <h2 class="m-0">Rejoins l’aventure Oxyjeunes</h2>
+      <p class="mt-8">Découvre nos actions sur le terrain, partage nos publications et aide-nous à faire grandir l’impact dans le quartier.</p>
+      <div class="actions mt-16">
+        <a class="btn" style="background:var(--green-400); color:white" href="https://www.instagram.com/oxyjeunes_/" target="_blank" rel="noopener">Devenir bénévole</a>
+        <a class="btn btn-primary" href="dons.html">Faire un don</a>
+      </div>
+    </section>
+
+    <!-- DERNIÈRES ACTIONS -->
+    <section class="section reveal">
+      <h3>Dernières actions</h3>
+      <div class="grid-3">
+        <figure class="photo">
+          <img src="images/tobogan.jpg" alt="Jeune qui descend un toboggan d’eau, éclaboussures" loading="lazy">
+          <figcaption>Sortie au parc</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="images/feteamiral.jpg" alt="Terrain rouge de quartier avec banderole L’Amiral fête l’été" loading="lazy">
+          <figcaption>Fête de l’Amiral</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="images/i5.jpg" alt="Atelier au jardin avec de nombreux jeunes sous un parasol" loading="lazy">
+          <figcaption>Échanges au jardin</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="fixed-footer">
+    <p>&copy; 2025 Oxyjeunes</p>
+  </footer>
+
+</body>
+</html>
